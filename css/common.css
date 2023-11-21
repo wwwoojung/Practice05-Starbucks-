@@ -1,0 +1,47 @@
+.inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.sec {
+    padding: 128px 0;
+}
+
+.sec .title {
+    max-width: 1200px;
+    margin: 0 auto 40px auto;
+    padding: 0 15px;
+
+    text-align: center;
+}
+
+.sec .title h2 {
+    font-size: 36px;
+    font-weight: 600;
+    margin: 0 0 16px 0;
+}
+
+.sec .title p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.btn {
+    border: none;
+    background: transparent;
+
+    color: #fff;
+    font-size: 14px;
+
+    border: 2px solid #fff;
+    border-radius: 6px;
+    padding: 8px 32px;
+
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #fff;
+    color: #00704a;
+}
