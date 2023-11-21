@@ -14,9 +14,22 @@ $(function () {
     $('.main_promotion .promotion_slide').slick({
         autoplay: true,
         pauseOnHover: false,
-        dots: true,
+        dots: false,
         centerMode: true,
-        centerPadding: '180px',
+        centerPadding: '170px',
         autoplaySpeed: 5000,
+    })
+
+
+    let st = true
+    $('.main_promotion .promotion_slide .slick-dots::before').on('click', function () {
+
+        if (st) {
+            $('.main_promotion .promotion_slide').slick('slickPause')
+        } else {
+            $('.main_promotion .promotion_slide').slick('slickPlay')
+        }
+
+        st = !st;
     })
 })
