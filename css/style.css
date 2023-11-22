@@ -161,6 +161,10 @@
     transition: 0.5s 3s;
 }
 
+.main_promotion {
+    padding: 128px 0 192px 0;
+}
+
 .main_promotion .inner {
     position: relative;
 }
@@ -249,4 +253,26 @@
 .main_promotion .control_dots .play_btn.on::before {
     content: "\ea3e";
     font-family: xeicon;
+}
+
+.main_favorite {
+    background: url(../images/main_favorite_bg.jpg) no-repeat fixed center center;
+    height: 800px;
+}
+
+.main_favorite .favorite_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 100%;
+}
+
+.footer {
+    background: #2C2A29;
+    padding: 80px 0;
+}
+
+.footer .footer_wrap {
+    padding: 0 calc((100% - 1440px) / 2);
 }
