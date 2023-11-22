@@ -224,7 +224,7 @@
     visibility: hidden;
 }
 
-.main_promotion .control_dots li.on {
+.main_promotion .control_dots .dot.on {
     background: #00704a;
 }
 
@@ -244,4 +244,9 @@
     transform: translate(-50%, -50%);
 
     font-size: 20px;
+}
+
+.main_promotion .control_dots .play_btn.on::before {
+    content: "\ea3e";
+    font-family: xeicon;
 }

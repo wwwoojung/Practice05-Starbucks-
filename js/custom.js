@@ -20,9 +20,9 @@ $(function () {
         autoplaySpeed: 5000,
     })
 
-
     let st = true
-    $('.main_promotion .promotion_slide .slick-dots::before').on('click', function () {
+    $('.main_promotion .control_dots .play_btn').on('click', function () {
+        $(this).toggleClass('on');
 
         if (st) {
             $('.main_promotion .promotion_slide').slick('slickPause')
@@ -31,5 +31,16 @@ $(function () {
         }
 
         st = !st;
+    })
+
+    $('.main_promotion .promotion_slide').on('afterChange', function (e, s, c) {
+        $('.main_promotion .control_dots .dot').removeClass('on')
+        $('.main_promotion .control_dots .dot').eq(c).addClass('on')
+    })
+
+
+    $('.main_promotion .control_dots .dot').on('click', function () {
+        let idx = $(this).index() - 1
+        $('.main_promotion .promotion_slide').slick('slickGoTo', idx)
     })
 })
