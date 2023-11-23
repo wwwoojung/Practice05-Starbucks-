@@ -17,7 +17,7 @@ $(function () {
         dots: false,
         centerMode: true,
         centerPadding: '170px',
-        autoplaySpeed: 5000,
+        autoplaySpeed: 4000,
     })
 
     let st = true
