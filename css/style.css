@@ -255,17 +255,90 @@
     font-family: xeicon;
 }
 
+.main_holiday {
+    background: #f6f5ef;
+}
+
+.main_holiday .holiday_content {
+    display: flex;
+    justify-content: space-between;
+
+    text-align: center;
+}
+
+.main_holiday .holiday_content .content {
+    padding: 160px 0 80px 0;
+}
+
+.main_holiday .holiday_content .content01 {
+    flex: 1;
+    background: url(../images/2023_christmas_promotion_bg01.jpg) no-repeat top left/cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.main_holiday .holiday_content .content02 {
+    flex: 1;
+    background: url(../images/2023_christmas_promotion_bg02.jpg) no-repeat top right/cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.main_holiday .holiday_content .content02 img {
+    transform: translate(20%, 0);
+}
+
+.main_holiday .content02 .text_box .btn {
+    color: #cd9757;
+    border: 2px solid #cd9757;
+}
+
+.main_holiday .content02 .text_box .btn:hover {
+    background: #cd9757;
+    color: #fff;
+}
+
 .main_favorite {
-    background: url(../images/main_favorite_bg.jpg) no-repeat fixed center center;
+    background: url(../images/main_favorite_bg.jpg) no-repeat fixed center center/cover;
     height: 800px;
 }
 
 .main_favorite .favorite_content {
+    max-width: calc(1200px + (100% - 1200px) / 2);
+    height: 100%;
+
+    margin: 0 0 0 auto;
+    padding: 0 30px 0 15px;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
 
-    height: 100%;
+.main_favorite .favorite_content .text_box {
+    color: #fff;
+    text-align: left;
+}
+
+.main_favorite .favorite_content .text_box p:nth-child(1) {
+    margin: 0 0 40px 0;
+}
+
+.main_favorite .favorite_content .text_box p:nth-child(2) {
+    margin: 0 0 14px 0;
+
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 32px;
+}
+
+.main_favorite .favorite_content .text_box p:nth-child(3) {
+    line-height: 20px;
+    margin: 0 0 40px 0;
 }
 
 .footer {
