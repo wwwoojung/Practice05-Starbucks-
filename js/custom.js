@@ -20,6 +20,10 @@ $(function () {
         autoplaySpeed: 4000,
     })
 
+    $('.main_promotion .promotion_slide .img_box a').on('click', function (e) {
+        e.preventDefault();
+    })
+
     let st = true
     $('.main_promotion .control_dots .play_btn').on('click', function () {
         $(this).toggleClass('on');
